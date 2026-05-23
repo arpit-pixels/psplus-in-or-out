@@ -2,8 +2,8 @@ export function PriceTable() {
   const rows: [string, string, string][] = [
     ["Essential · 1-month", "₹499", "₹649"],
     ["Essential · 12-month", "₹3,949", "₹5,139"],
-    ["Extra · 12-month", "₹6,649", "₹8,649"],
-    ["Deluxe · 12-month", "₹7,749", "₹10,049"],
+    ["Extra · 12-month", "₹6,699", "₹8,709"],
+    ["Deluxe · 12-month", "₹7,599", "₹9,879"],
   ];
   return (
     <div className="flex flex-col gap-6 sm:gap-8">
@@ -33,9 +33,12 @@ export function PriceTable() {
         ))}
       </div>
       <p className="mx-auto max-w-2xl text-center text-sm leading-relaxed text-[var(--ink-mid)]">
-        All four PS Plus tiers raised. Existing Indian subscribers pay the new
-        price on their next renewal. ~500K subscribers affected — and Sony has a
-        track record of regional hikes that go global.
+        All three PS Plus tiers raised — Essential, Extra, Deluxe. New
+        subscribers pay the new price immediately. Existing Indian subscribers
+        pay it from their{" "}
+        <span className="font-semibold text-[var(--ink)]">next billing on or after July 19, 2026</span>.
+        ~500K subscribers affected — and Sony has a track record of regional
+        hikes that go global.
       </p>
     </div>
   );
