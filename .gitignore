@@ -42,3 +42,5 @@ next-env.d.ts
 
 # dev artifacts
 /preview-*.png
+
+.vercel

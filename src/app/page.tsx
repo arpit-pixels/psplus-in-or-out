@@ -15,7 +15,7 @@ type Status = "loading" | "ready" | "voting" | "voted" | "undoing";
 
 const LS_KEY = "psplus_vote";
 const POLL_MS = 4000;
-const SITE_URL = "https://psplus-in-or-out.vercel.app";
+const SITE_URL = "https://psplus-poll.vercel.app";
 
 export default function Home() {
   const [counts, setCounts] = useState<Counts>({ in: 0, out: 0 });

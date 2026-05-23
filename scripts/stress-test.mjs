@@ -1,4 +1,4 @@
-const url = process.argv[2] || "https://psplus-in-or-out.vercel.app";
+const url = process.argv[2] || "https://psplus-poll.vercel.app";
 const concurrency = Number(process.argv[3] || 50);
 
 const before = await fetch(`${url}/api/counts`).then((r) => r.json());

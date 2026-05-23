@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://psplus-in-or-out.vercel.app";
+const SITE_URL = "https://psplus-poll.vercel.app";
 
 export default function robots(): MetadataRoute.Robots {
   return {

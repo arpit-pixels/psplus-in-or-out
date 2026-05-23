@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://psplus-in-or-out.vercel.app";
+const SITE_URL = "https://psplus-poll.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
