@@ -175,17 +175,17 @@ export default function Home() {
       <footer className="ps-blue-bg pb-9 pt-9 text-white sm:pb-12 sm:pt-12">
         <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-3 px-5 text-center sm:px-8">
           <div className="flex items-center gap-3 text-white">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <polygon points="12,3.5 21,19.5 3,19.5" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round" />
             </svg>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2.2" />
             </svg>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
               <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
             </svg>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <rect x="4" y="4" width="16" height="16" stroke="currentColor" strokeWidth="2.2" rx="1.5" />
             </svg>
           </div>
@@ -193,6 +193,11 @@ export default function Home() {
           <p className="text-xs leading-relaxed text-white/70 sm:text-sm">
             Built by gamers, for gamers. One vote per browser. Not affiliated
             with Sony or PlayStation.
+          </p>
+          <p className="text-[11px] leading-relaxed text-white/55">
+            Your approximate city and country (from your IP) may appear in the
+            live ticker. We don&apos;t store IPs, names, emails, or any other
+            personal info.
           </p>
         </div>
       </footer>

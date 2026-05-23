@@ -91,6 +91,7 @@ export function Ticker() {
                   className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border ${
                     isOut ? "border-white/80" : "border-white/80"
                   } font-mono text-[11px] font-bold text-white`}
+                  aria-hidden="true"
                 >
                   {isOut ? "○" : "×"}
                 </span>

@@ -17,7 +17,7 @@ export function VoteButtons({ onVote, disabled }: Props) {
         disabled={disabled}
         className="pill pill-red w-full px-7 py-5 text-base disabled:opacity-50 sm:py-6 sm:text-lg"
       >
-        <PsIcon shape="circle" size={20} className="text-white" />
+        <PsIcon shape="circle" size={20} className="text-white" decorative />
         I&apos;M CANCELING
       </button>
 
@@ -26,7 +26,7 @@ export function VoteButtons({ onVote, disabled }: Props) {
         disabled={disabled}
         className="pill pill-blue w-full px-7 py-5 text-base disabled:opacity-50 sm:py-6 sm:text-lg"
       >
-        <PsIcon shape="cross" size={20} className="text-white" />
+        <PsIcon shape="cross" size={20} className="text-white" decorative />
         I&apos;M STAYING
       </button>
     </div>

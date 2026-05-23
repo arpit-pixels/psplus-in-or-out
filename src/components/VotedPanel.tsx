@@ -26,7 +26,7 @@ export function VotedPanel({ vote, counts, shareText, siteUrl, onUndo, undoing }
     <div className="card card-shadow card-hover flex flex-col gap-5 p-6 sm:p-7">
       <div className="flex items-center gap-4">
         <span className={`flex h-14 w-14 items-center justify-center rounded-2xl border-2 ${isOut ? "border-[var(--cancel)]" : "border-[var(--ps-blue)]"} ${accent}`}>
-          <PsIcon shape={shape} size={28} />
+          <PsIcon shape={shape} size={28} decorative />
         </span>
         <div className="flex flex-col gap-0.5">
           <span className="eyebrow text-[var(--ink-mid)]">Your vote</span>

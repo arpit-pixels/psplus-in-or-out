@@ -1,7 +1,6 @@
 import { redis, KEY_IN, KEY_OUT, ensureSeed, SEED_IN, SEED_OUT } from "@/lib/redis";
 
 export const runtime = "edge";
-export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
@@ -15,9 +14,23 @@ export async function GET() {
         in: Number(inVotes ?? SEED_IN),
         out: Number(outVotes ?? SEED_OUT),
       },
-      { headers: { "Cache-Control": "no-store" } }
+      {
+        headers: {
+          "Cache-Control":
+            "public, s-maxage=3, stale-while-revalidate=10",
+        },
+      }
     );
   } catch {
-    return Response.json({ in: SEED_IN, out: SEED_OUT }, { status: 200 });
+    return Response.json(
+      { in: SEED_IN, out: SEED_OUT },
+      {
+        status: 200,
+        headers: {
+          "Cache-Control":
+            "public, s-maxage=3, stale-while-revalidate=10",
+        },
+      }
+    );
   }
 }

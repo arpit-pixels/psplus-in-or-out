@@ -14,10 +14,10 @@ export function Hero({ total }: { total: number }) {
       </div>
 
       <div className="flex items-center gap-3 text-white/85">
-        <PsIcon shape="triangle" size={22} />
-        <PsIcon shape="circle" size={22} />
-        <PsIcon shape="cross" size={22} />
-        <PsIcon shape="square" size={22} />
+        <PsIcon shape="triangle" size={22} decorative />
+        <PsIcon shape="circle" size={22} decorative />
+        <PsIcon shape="cross" size={22} decorative />
+        <PsIcon shape="square" size={22} decorative />
       </div>
 
       <h1 className="heading-caps text-balance text-[2.5rem] text-white sm:text-[4.2rem]">

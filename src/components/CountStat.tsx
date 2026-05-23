@@ -17,7 +17,7 @@ export function CountStat({ label, value, pct, tone }: Props) {
   return (
     <div className="flex flex-col gap-2">
       <span className={`eyebrow flex items-center gap-1.5 ${accent}`}>
-        <PsIcon shape={isOut ? "circle" : "cross"} size={11} />
+        <PsIcon shape={isOut ? "circle" : "cross"} size={11} decorative />
         {label}
       </span>
       <div className="flex items-baseline gap-2">
