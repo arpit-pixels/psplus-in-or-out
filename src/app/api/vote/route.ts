@@ -13,7 +13,7 @@ export const runtime = "edge";
 
 const limiter = new Ratelimit({
   redis,
-  limiter: Ratelimit.fixedWindow(2, "30 s"),
+  limiter: Ratelimit.fixedWindow(5, "30 s"),
   analytics: false,
   prefix: "ratelimit:vote",
 });
